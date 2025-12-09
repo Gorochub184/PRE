@@ -1,0 +1,85 @@
+/* 全体リセット */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* body全体 */
+body {
+    font-family: "Yu Gothic", sans-serif;
+    background: #fffbe0; /* 薄い黄色ベース */
+    color: #3b2e1c;
+    line-height: 1.8;
+    position: relative;
+}
+
+/* メイン記事 */
+main {
+    max-width: 900px;
+    margin: 70px auto;
+    padding: 30px 40px;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 16px;
+    backdrop-filter: blur(6px);
+    box-shadow: 0 0 15px rgba(255, 200, 0, 0.2);
+}
+
+/* 見出し */
+h1 {
+    font-size: 2rem;
+    color: #f5c542; /* 黄色ベースでピカチュウっぽく */
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+h2 {
+    font-size: 1.4rem;
+    color: #fd7676;
+    margin: 20px 0 12px;
+}
+
+h3 {
+    font-size: 1.2rem;
+    color: #080808;
+    margin: 20px 0 12px;
+}
+
+/* 段落 */
+p {
+    margin: 0 0 16px;
+    line-height: 1.7;
+}
+
+/* 強調 */
+b,
+span[style*="font-weight: bold"] {
+    background: rgba(255, 230, 150, 0.3);
+    padding: 2px 4px;
+    border-radius: 4px;
+}
+
+@media (max-width: 600px) {
+    body {
+        font-size: 18px; /* ★ 普段より大きくして読みやすくする */
+        line-height: 1.9;
+    }
+
+    main {
+        max-width: 25em; /* ★ 横幅を25文字に固定 */
+        margin: 40px auto;
+        padding: 24px 20px;
+    }
+
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    h2 {
+        font-size: 1.4rem;
+    }
+
+    h3 {
+        font-size: 1.2rem;
+    }
+}
